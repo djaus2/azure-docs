@@ -42,7 +42,7 @@ To complete this operation, you need the following parts from your Raspberry Pi 
 * A diffused 10-mm LED
 * The Ethernet cable
 
-![Things in your Starter Kit](media/iot-hub-raspberry-pi-lessons/lesson1/starter_kit.jpg)
+![Things in your Starter Kit](../media/iot-hub-raspberry-pi-lessons/lesson1/starter_kit.jpg)
 
 You also need:
 
