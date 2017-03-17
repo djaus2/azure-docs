@@ -42,7 +42,7 @@ To complete this operation, you need the following parts from your Raspberry Pi 
 * A diffused 10-mm LED
 * The Ethernet cable
 
-![Things in your Starter Kit](../media/iot-hub-raspberry-pi-lessons/lesson1/starter_kit.jpg)
+![Things in your Starter Kit](media/iot-hub-raspberry-pi-lessons/lesson1/starter_kit.jpg)
 
 You also need:
 
@@ -67,12 +67,12 @@ Prepare the microSD card for installation of the Raspbian image.
       It is safe to remove the microSD card directly because Etcher automatically ejects or unmounts the microSD card upon completion.
    6. Insert the microSD card into your Pi.
 
-![Insert the SD card](../media/iot-hub-raspberry-pi-lessons/lesson1/insert_sdcard.jpg)
+![Insert the SD card](media/iot-hub-raspberry-pi-lessons/lesson1/insert_sdcard.jpg)
 
 ## Turn on Pi
 Turn on Pi by using the micro USB cable and the power supply.
 
-![Turn on](../media/iot-hub-raspberry-pi-lessons/lesson1/micro_usb_power_on.jpg)
+![Turn on](media/iot-hub-raspberry-pi-lessons/lesson1/micro_usb_power_on.jpg)
 
 > [!NOTE]
 > It is important to use the power supply in the kit that is at least 2A to make sure that your Raspberry has enough power to work correctly.
@@ -86,7 +86,7 @@ You can connect Pi to a wired network or to a wireless network. Make sure that P
 ### Connect to a wired network
 Use the Ethernet cable to connect Pi to your wired network. The two LEDs on Pi turn on if the connection is established.
 
-![Connect by using an Ethernet cable](../media/iot-hub-raspberry-pi-lessons/lesson1/connect_ethernet.jpg)
+![Connect by using an Ethernet cable](media/iot-hub-raspberry-pi-lessons/lesson1/connect_ethernet.jpg)
 
 ### Connect to a wireless network
 Follow the [instructions](https://www.raspberrypi.org/learning/software-guide/wifi/) from the Raspberry Pi Foundation to connect Pi to your wireless network. These instructions require you to first connect a monitor and a keyboard to Pi.
@@ -94,7 +94,7 @@ Follow the [instructions](https://www.raspberrypi.org/learning/software-guide/wi
 ## Connect the LED to Pi
 To complete this task, use the [breadboard](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard), the connector wires, the LED, and the resistor. Connect them to the [general-purpose input/output](https://www.raspberrypi.org/documentation/usage/gpio/) (GPIO) ports of Pi.
 
-![Breadboard, LED, and Resistor](../media/iot-hub-raspberry-pi-lessons/lesson1/breadboard_led_resistor.jpg)
+![Breadboard, LED, and Resistor](media/iot-hub-raspberry-pi-lessons/lesson1/breadboard_led_resistor.jpg)
 
 1. Connect the shorter leg of the LED to **GPIO GND (Pin 6)**.
 2. Connect the longer leg of the LED to one leg of the resistor.
@@ -109,7 +109,7 @@ Congratulations! You've successfully configured Pi.
 ## Summary
 In this article, you’ve learned how to configure Pi by installing Raspbian, connecting Pi to a network, and connecting an LED to Pi. Note that the LED doesn't yet light up. The next task is to install the necessary tools and software in preparation for running a sample application on Pi.
 
-![Hardware is ready](../media/iot-hub-raspberry-pi-lessons/lesson1/hardware_ready.jpg)
+![Hardware is ready](media/iot-hub-raspberry-pi-lessons/lesson1/hardware_ready.jpg)
 
 ## Next steps
 [Get the tools](iot-hub-raspberry-pi-kit-c-lesson1-get-the-tools-win32.md)
