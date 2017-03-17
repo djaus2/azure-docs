@@ -52,6 +52,23 @@
 ##### [Optional: Change the LED behavior](iot-hub-raspberry-pi-kit-c-lesson4-change-led-behavior.md)
 #### [Troubleshoot](iot-hub-raspberry-pi-kit-c-troubleshooting.md)
 
+### [CS](iot-hub-raspberry-pi-kit-win-10-iot-core-cs/iot-hub-raspberry-pi-kit-win-10-iot-core-cs-get-started.md)
+#### Lesson 1: Configure your device
+##### [Configure your device](iot-hub-raspberry-pi-kit-win-10-iot-core-cs/iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson1-configure-your-device.md)
+##### [Get the tools (Windows 7+)](iot-hub-raspberry-pi-kit-win-10-iot-core-cs/iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson1-get-the-tools-win32.md)
+##### [Create and deploy the blink application](iot-hub-raspberry-pi-kit-win-10-iot-core-cs/iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson1-deploy-blink-app.md)
+#### Lesson 2: Create your IoT hub
+##### [Get the Azure tools (Windows 7+)](iot-hub-raspberry-pi-kit-win-10-iot-core-cs/iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson2-get-azure-tools-win32.md)
+##### [Create your IoT hub and register your Raspberry Pi](iot-hub-raspberry-pi-kit-win-10-iot-core-cs/iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson2-prepare-azure-iot-hub.md)
+#### Lesson 3: Send device-to-cloud messages
+##### [Create an Azure function app and storage account](iot-hub-raspberry-pi-kit-win-10-iot-core-cs/iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson3-deploy-resource-manager-template.md)
+##### [Run the sample application to send messages](iot-hub-raspberry-pi-kit-win-10-iot-core-cs/iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson3-run-azure-blink.md)
+##### [Read messages persisted in storage](iot-hub-raspberry-pi-kit-win-10-iot-core-cs/iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson3-read-table-storage.md)
+#### Lesson 4: Send cloud-to-device messages
+##### [Run the sample application to receive messages](iot-hub-raspberry-pi-kit-win-10-iot-core-cs/iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson4-send-cloud-to-device-messages.md)
+##### [Optional: Change the LED behavior](iot-hub-raspberry-pi-kit-win-10-iot-core-cs/iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson4-change-led-behavior.md)
+#### [Troubleshoot](iot-hub-raspberry-pi-kit-win-10-iot-core-cs/iot-hub-raspberry-pi-kit-win-10-iot-core-cs-troubleshooting.md)
+
 ## Use an Intel Edison
 ### [Node.js](iot-hub-intel-edison-kit-node-get-started.md)
 #### Lesson 1: Configure your device
