@@ -51,20 +51,9 @@ You also need:
 * An Internet connection to download the necessary tools and software.
 
 ## Install Windows 10 IoT-Core on the MicroSD card
-Prepare the microSD card for installation of the Windows 10 IoT-Core image.
+Prepare the microSD card for installation of the Windows 10 IoT-Core image using **IoTDashboard**: [Take this link](IoTDashboard.md)
 
-1. Download Windows 10 IoT-Core.
-   1. [Download](https://www.raspberrypi.org/downloads/Windows 10 IoT-Core/) the .zip file for Windows 10 IoT-Core Jessie with Pixel.
-   2. Extract the Windows 10 IoT-Core image to a folder on your computer.
-2. Install Windows 10 IoT-Core to the microSD card.
-   1. [Download](https://www.etcher.io) and install the Etcher SD card burner utility.
-   2. Run Etcher and select the Windows 10 IoT-Core image that you extracted in step 1.
-   3. Select the microSD card drive.
-      Note that Etcher may have already selected the correct drive.
-   4. Click **Flash** to install Windows 10 IoT-Core to the microSD card.
-   5. Remove the microSD card from your computer when installation is complete.
-      It is safe to remove the microSD card directly because Etcher automatically ejects or unmounts the microSD card upon completion.
-   6. Insert the microSD card into your Pi.
+Insert the card:
 
 ![Insert the SD card](media/iot-hub-raspberry-pi-lessons/lesson1/insert_sdcard.jpg)
 
