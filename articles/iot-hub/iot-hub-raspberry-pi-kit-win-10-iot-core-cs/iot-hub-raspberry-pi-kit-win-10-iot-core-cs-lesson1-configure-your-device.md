@@ -97,7 +97,7 @@ To complete this task, use the [breadboard](https://learn.sparkfun.com/tutorials
 
 1. Connect the shorter leg of the LED to **GPIO GND (Pin 6)**.
 2. Connect the longer leg of the LED to one leg of the resistor.
-3. Connect the other leg of the resistor to **GPIO 4 (Pin 7)**.
+3. Connect the other leg of the resistor to **GPIO 0 (Pin 11)**.
 
 Note that the LED polarity is important. This polarity setting is commonly known as Active Low.
 
