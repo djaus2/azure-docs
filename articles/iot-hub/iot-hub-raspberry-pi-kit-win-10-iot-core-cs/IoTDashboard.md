@@ -69,9 +69,9 @@ To find your device, go to **My Devices**. If your device is not listed, try reb
 ### Connect to your device
 Right click and select **Open in Device Portal**. This will launch the [Windows Device Portal]({{site.baseurl}}/{{page.lang}}/Docs/Tools/DevicePortal) page and is the best way to interact and manage your device.
 
-![IoTDashboard View Devices](media/IoTDashboard/IoTDashboard_RightClickMenuNew.PNG)
+![IoTDashboard View Devices](media/IoTDashboard/IoTDashboard_RightClickMenuNew.png)
 
-You can also connect to the device using Windows PowerShell, SSH [see here](https://developer.microsoft.com/en-us/windows/iot/docs/ssh)), ftp (need to start it first) [see here](https://developer.microsoft.com/en-us/windows/iot/docs/ftp) and through File Explorer Remotely (Open Network Share).
+You can also connect to the device using Windows PowerShell, SSH [see here](https://developer.microsoft.com/en-us/windows/iot/docs/ssh)), ftp (need to start it first [see here](https://developer.microsoft.com/en-us/windows/iot/docs/ftp)) and through File Explorer Remotely (Open Network Share).
 
 The **"Launch IoT Remote Client"** option opens a GUI interface like Remoet Desktop. You have to enable it in the Device Portal first:
 
