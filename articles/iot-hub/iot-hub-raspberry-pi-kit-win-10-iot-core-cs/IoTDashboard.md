@@ -88,7 +88,7 @@ The Remote UI through IoT Remote Server
 ___
 IoT Dashboard lets you provision IoT Core devices with Azure IoT Hub. You can read more about it in this in **Lesson 3** or: [blog post](https://blogs.windows.com/buildingapps/2016/07/20/building-secure-apps-for-windows-iot-core)
 
-![IoTDashboard Azure](media/IoTDashboard/IoTDashboard_Azure.PNG)
+![IoTDashboard Azure](media/IoTDashboard/IoTDashboard_Azure.png)
 
 ##
 
