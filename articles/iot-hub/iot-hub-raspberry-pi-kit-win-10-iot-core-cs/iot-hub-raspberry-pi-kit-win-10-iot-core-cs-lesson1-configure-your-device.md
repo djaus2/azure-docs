@@ -1,12 +1,12 @@
 ---
 title: 'Connect Raspberry Pi (C) to Azure IoT - Lesson 1: Configure device | Microsoft Docs'
-description: Configure Raspberry Pi 3 for first-time use and install the Raspbian OS, a free operating system that is optimized for the Raspberry Pi hardware.
+description: Configure Raspberry Pi 3 for first-time use and install the Windows 10 IoT-Core OS, a free operating system that is optimized for the Raspberry Pi hardware.
 services: iot-hub
 documentationcenter: ''
 author: shizn
 manager: timtl
 tags: ''
-keywords: 'install raspbian, raspbian download, how to install raspbian, raspbian setup, raspberry pi install raspbian, raspberry pi install os, raspberry pi sd card install, raspberry pi connect, connect to raspberry pi, raspberry pi connectivity'
+keywords: 'install Windows 10 IoT-Core, Windows 10 IoT-Core download, how to install Windows 10 IoT-Core, Windows 10 IoT-Core setup, raspberry pi install Windows 10 IoT-Core, raspberry pi install os, raspberry pi sd card install, raspberry pi connect, connect to raspberry pi, raspberry pi connectivity'
 
 ms.assetid: 8ee9b23c-93f7-43ff-8ea1-e7761eb87a6f
 ms.service: iot-hub
@@ -20,12 +20,11 @@ ms.author: xshi
 ---
 # Configure your device
 ## What you will do
-Configure Pi for first-time use and install the Raspbian operating system. Raspbian is a free operating system that is optimized for the Raspberry Pi hardware. If you have any problems, look for solutions on the [troubleshooting page](iot-hub-raspberry-pi-kit-c-troubleshooting.md).
-
+Configure Pi for first-time use and install the Windows 10 IoT-Core operating system. Windows 10 IoT-Core is free to download. If you have any problems, look for solutions on the [troubleshooting page](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-troubleshooting.md).
 ## What you will learn
 In this article, you will learn:
 
-* How to install Raspbian on Pi.
+* How to install Windows 10 IoT-Core on Pi.
 * How to power up Pi by using a USB cable.
 * How to connect Pi to the network by using an Ethernet cable or wireless network.
 * How to add an LED to the breadboard and connect it to Pi.
@@ -48,21 +47,21 @@ You also need:
 
 * A wired or wireless connection for Pi to connect to.
 * A USB-SD adapter or mini-SD card to burn the OS image onto the microSD card.
-* A computer running Windows, Mac, or Linux. The computer is used to install Raspbian on the microSD card.
+* A computer running Windows, Mac, or Linux. The computer is used to install Windows 10 IoT-Core on the microSD card.
 * An Internet connection to download the necessary tools and software.
 
-## Install Raspbian on the MicroSD card
-Prepare the microSD card for installation of the Raspbian image.
+## Install Windows 10 IoT-Core on the MicroSD card
+Prepare the microSD card for installation of the Windows 10 IoT-Core image.
 
-1. Download Raspbian.
-   1. [Download](https://www.raspberrypi.org/downloads/raspbian/) the .zip file for Raspbian Jessie with Pixel.
-   2. Extract the Raspbian image to a folder on your computer.
-2. Install Raspbian to the microSD card.
+1. Download Windows 10 IoT-Core.
+   1. [Download](https://www.raspberrypi.org/downloads/Windows 10 IoT-Core/) the .zip file for Windows 10 IoT-Core Jessie with Pixel.
+   2. Extract the Windows 10 IoT-Core image to a folder on your computer.
+2. Install Windows 10 IoT-Core to the microSD card.
    1. [Download](https://www.etcher.io) and install the Etcher SD card burner utility.
-   2. Run Etcher and select the Raspbian image that you extracted in step 1.
+   2. Run Etcher and select the Windows 10 IoT-Core image that you extracted in step 1.
    3. Select the microSD card drive.
       Note that Etcher may have already selected the correct drive.
-   4. Click **Flash** to install Raspbian to the microSD card.
+   4. Click **Flash** to install Windows 10 IoT-Core to the microSD card.
    5. Remove the microSD card from your computer when installation is complete.
       It is safe to remove the microSD card directly because Etcher automatically ejects or unmounts the microSD card upon completion.
    6. Insert the microSD card into your Pi.
@@ -78,7 +77,7 @@ Turn on Pi by using the micro USB cable and the power supply.
 > It is important to use the power supply in the kit that is at least 2A to make sure that your Raspberry has enough power to work correctly.
 
 ## Enable SSH
-As of the November 2016 release, Raspbian has the SSH server disabled by default. You need to enable it manually. You can refer to the [official instructions](https://www.raspberrypi.org/documentation/remote-access/ssh/) or connect a monitor and go to **Preferences -> Raspberry Pi Configuration** to enable SSH.
+As of the November 2016 release, Windows 10 IoT-Core has the SSH server disabled by default. You need to enable it manually. You can refer to the [official instructions](https://www.raspberrypi.org/documentation/remote-access/ssh/) or connect a monitor and go to **Preferences -> Raspberry Pi Configuration** to enable SSH.
 
 ## Connect Raspberry Pi 3 to the network
 You can connect Pi to a wired network or to a wireless network. Make sure that Pi is connected to the same network as your computer. For example, you can connect Pi to the same switch that your computer is connected to.
@@ -107,10 +106,10 @@ Note that the LED polarity is important. This polarity setting is commonly known
 Congratulations! You've successfully configured Pi.
 
 ## Summary
-In this article, you’ve learned how to configure Pi by installing Raspbian, connecting Pi to a network, and connecting an LED to Pi. Note that the LED doesn't yet light up. The next task is to install the necessary tools and software in preparation for running a sample application on Pi.
+In this article, you’ve learned how to configure Pi by installing Windows 10 IoT-Core, connecting Pi to a network, and connecting an LED to Pi. Note that the LED doesn't yet light up. The next task is to install the necessary tools and software in preparation for running a sample application on Pi.
 
 ![Hardware is ready](media/iot-hub-raspberry-pi-lessons/lesson1/hardware_ready.jpg)
 
 ## Next steps
-[Get the tools](iot-hub-raspberry-pi-kit-c-lesson1-get-the-tools-win32.md)
+[Get the tools](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson1-get-the-tools-win32.md)
 
