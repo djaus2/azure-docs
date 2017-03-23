@@ -20,12 +20,12 @@ ms.author: xshi
 ---
 # Create and deploy the blink application
 ## What you will do
-Clone the sample C application from GitHub, and use the gulp tool to deploy the sample application to Raspberry Pi 3. The sample application blinks the LED connected to the board every two seconds. If you have any problems, look for solutions on the [troubleshooting page](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-troubleshooting.md).
+Clone the sample C# application from GitHub, and use the Visual Studio to deploy the sample application to Raspberry Pi 3. The sample application blinks the LED connected to the board every two seconds. If you have any problems, look for solutions on the [troubleshooting page](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-troubleshooting.md).
 
 ## What you will learn
 In this article, you will learn:
 
-* How to use the `device-discover-cli` tool to retrieve networking information about Pi.
+* Clone a project from GitHub
 * How to deploy and run the sample application on Pi.
 * How to deploy and debug applications running remotely on Pi.
 
@@ -33,39 +33,43 @@ In this article, you will learn:
 You must have successfully completed the following operations:
 
 * [Configure your device](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson1-configure-your-device.md)
+* [Boot your device](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson1-boot-your-device.md)
 * [Get the tools](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson1-get-the-tools-win32.md)
 
-## Obtain the IP address and host name of Pi
-Open a command prompt in Windows or a terminal in macOS or Ubuntu, and then run the following command:
-
-```bash
-devdisco list --eth
-```
-
-You should see an output that is similar to the following:
-
-![Device discovery](media/iot-hub-raspberry-pi-lessons/lesson1/device_discovery.png)
-
-Take note of the `IP address` and `hostname` of Pi. You need this information later in this article.
 
 > [!NOTE]
 > Make sure that Pi is connected to the same network as your computer. For example, if your computer is connected to a wireless network while Pi is connected to a wired network, you might not see the IP address in the devdisco output.
 
 ## Open the sample application
-To open the sample application, follow these steps:
+Get and open the sample application, in one of two ways.:
 
 1. Clone the sample repository from GitHub by running the following command:
-   
+
+    * Create a suitable folder to host the project
+    * Right click on it and run Git-Git Bash
+    * Enter:
     ```bash
-    git clone https://github.com/Azure-Samples/iot-hub-c-raspberrypi-getting-started.git
+    git clone https://github.com/djaus2/Win10IoTCoreIoTHubLabs
     ```
-2. Open the sample application in Visual Studio Code by running the following commands:
+    * Open the sample application in Visual Studio 2015 by openning it's solution file (.sln)
+
+2. Browse to https://github.com/djaus2/Win10IoTCoreIoTHubLabs
+    * Login to GitHub (Create a registraion if you don't have one).
+    * Select Clone and choose the Visual Studio option
+    * Open Visual Studio 2015 and choose the Team Explorer tab
+    * Complete the cloning
+    * Open the  project
+
+## Examine the project code via the Solution Exlorer
+
+![Projects](media/IoTDashboard/Projects.png)
+
+In this Leson we will only use the MainApp project:
+
+![Main App](media/IoTDashboard/MainApp.png)
+
+
    
-    ```bash
-    cd iot-hub-c-raspberrypi-getting-started
-    cd Lesson1
-    code .
-    ```
 
 ![Repo structure](media/iot-hub-raspberry-pi-lessons/lesson1/vscode-blink-c-mac.png)
 

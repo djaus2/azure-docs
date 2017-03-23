@@ -3,19 +3,19 @@ title: 'Connect Raspberry Pi (C) to Azure IoT - Lesson 1: Get tools (Windows) | 
 description: Download and install the necessary tools and software for the first sample application for Pi on Windows 7 and later versions.
 services: iot-hub
 documentationcenter: ''
-author: shizn
-manager: timtl
+author: djaus
+manager: done
 tags: ''
 keywords: 'iot development, iot software, internet of things software, install git on windows, install node js windows, install npm on windows'
 
 ms.assetid: bd765ddd-65b7-4241-a391-dc77cb3af1c0
 ms.service: iot-hub
-ms.devlang: c
+ms.devlang: C#
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/28/2016
-ms.author: xshi
+ms.date: 04/24/2017
+ms.author: djaus
 
 ---
 # Get the tools (Windows 7 or later)
@@ -54,6 +54,7 @@ Visual Studio 2017 may work ??
 
 * Download and install Visual Studio Community 2015 from [here](http://go.microsoft.com/fwlink/?LinkID=534599).
 *NOTE: Visual Studio Professional 2015 and Visual Studio Enterprise 2015 can be downloaded. If you choose to install a different edition of Visual Studio make sure to do a custom installation and select Universal Windows App Development Tools > Tools and Windows SDK.* 
+* Include the GIT Visual Studio option.
 * Update Visual Studio 2015, if necessary.
 Install Update 3 from the Extensions and Update dialog in Visual Studio or from [here](http://go.microsoft.com/fwlink/?LinkId=691129) 
 * Install the Windows IoT project templates.
@@ -68,6 +69,7 @@ Alternatively, the templates can be found by searching for Windows IoT Core Proj
 ## install Git for Windows.
 
   * [Get Git for Windows](https://git-scm.com/download/win/)
+  * Choose teh File Explorer options that enable to Run Bash command shells directly from Explorer
 
 
 ## Create a sample app and run it on the RPI
@@ -132,10 +134,10 @@ Since the IoT extension SDK is not added to projects by default, you'll need to 
 
 ![Debug Dialog](media/IoTDashboard/debugdialog.png)
 
-* Note the PI is detected, which you select as the target f not doen automatically.
+* Note that the PI is detected, which you select as the target if not doeneautomatically.
 * The Authentication must be Universal(Unencrypted)Protocol
 * You can access that dialog via the project properties - Debug tab
-* You can also just enter the devices IP Address for the name, which can be useful with WiFi networks when the device isn't detected.
+* You can also just enter the device's IP Address for the name, which can be useful with WiFi networks when the device isn't detected.
 
 ### 6. Run the app on your RPI
 * F5 again.  Test Breakpoints.
