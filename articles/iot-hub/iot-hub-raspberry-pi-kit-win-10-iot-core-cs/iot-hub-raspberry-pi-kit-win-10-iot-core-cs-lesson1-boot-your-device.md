@@ -43,6 +43,8 @@ As per [Configure your device](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesso
 
 ![First boot](media/IoTDashboard/bootup.png)
 
+[More info](https://developer.microsoft.com/en-US/windows/iot/Docs/GetStarted/rpi3/sdcard/stable/getstartedstep2)
+
 ### First boot
 The first boot will always take longer than all subsequent boots. The operating system will take some time to install and connect to your network.
 Boot time can vary greatly based on your SD card. For example, a Raspberry Pi 3 running on our recommended SD card takes 3-4 minutes for first boot. On the same Pi with a poor quality SD card, we have seen boot times longer than 15 minutes.
