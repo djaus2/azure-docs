@@ -142,7 +142,6 @@ Since the IoT extension SDK is not added to projects by default, you'll need to 
 
 
 
-
 ## Summary
 
 You've installed the required development tools and software for the first sample application. You have run a simple UWP app on the device.  The next task is to create, deploy, and run the sample LED application on Pi.
