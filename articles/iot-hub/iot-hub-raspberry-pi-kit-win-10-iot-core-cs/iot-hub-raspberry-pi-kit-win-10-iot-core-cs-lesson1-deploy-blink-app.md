@@ -64,83 +64,84 @@ Get and open the sample application, in one of two ways.:
 
 ![Projects](media/IoTDashboard/Projects.png)
 
-In this Leson we will only use the MainApp project:
+Note the various subprojects in the solution. In this Lesson you will only use the MainApp project:
 
 ![Main App](media/IoTDashboard/MainApp.png)
 
 
-   
+**Examine the project References and note that Universal Windows 10 IoT-Core Extensions ARE included.** You make use of the RPI's **GPIO** in this lesson.
 
-![Repo structure](media/iot-hub-raspberry-pi-lessons/lesson1/vscode-blink-c-mac.png)
+The downloaded project has the Lesson set as LESSON1. This is enforced in the Project Property Pages tab- Build.
 
-The `main.c` file in the `app` subfolder is the key source file that contains the code to control the LED.
+Examine the Conditional Compilation Symbols. LESSON1 is embedded in it. 
 
-### Install application dependencies
-Install the libraries and other modules you need for the sample application by running the following command:
+![Lesson1 Symbol](media/IoTDashboard/LESSON1Symbol.png)
 
-```bash
-npm install
+> [Note:]
+> Rather than have separate versions of the MainApp for different lessons, you will just change this symbol in later lessons.
+
+The MainPage.xaml.cs code thus simplifies to:
+
+```c#
+
+        public MainPage()
+        {
+            // ...
+
+            IoTGPIO.InitGPIO();
+
+            if (IoTGPIO.OutPin != null)
+            {
+
+                var t = Task.Run(() => Loop());
+                t.Wait();
+            }
+
+            Application.Current.Exit();
+        }
+
+        public async Task Loop()
+        {
+            for (int i = 0; i <  numLoops; i++)
+            {
+
+                IoTGPIO.LEDOn();
+
+                //Periodic Flash LED only
+
+                //Pause 400 mS for all
+                await System.Threading.Tasks.Task.Delay(TimeSpan.FromMilliseconds(400));
+
+                IoTGPIO.LEDOff();
+
+                //Pause 600 mS for all
+                await System.Threading.Tasks.Task.Delay(TimeSpan.FromMilliseconds(600));
+        }
+```
+So The LED gets turned off and on periodically. The app does not use an UX apart from its Splash screen. We could usea simulated blink (ToDo).
+
+The IoTGPIO class is implemented in **IoTGPIO.cs**. OPen the file and examine it. There is an GPIO Initialisation method that will fail *("gracefully")* if the app isn't running on a **Windows 10 IoT-Core device**.
+The LEDOn() and LEDOff() methods are:
+```c#
+        public static void LEDOn()
+        {
+            pinValue = GpioPinValue.High;
+            OutPin.Write(pinValue);
+            Debug.WriteLine("LED On");
+        }
+
+        public static void LEDOff()
+        {
+            pinValue = GpioPinValue.Low;
+            OutPin.Write(pinValue);
+            Debug.WriteLine("LED Off");
 ```
 
-## Configure the device connection
-To configure the device connection, follow these steps:
-
-1. Generate the device configuration file by running the following command:
-   
-   ```bash
-   gulp init
-   ```
-   
-   The configuration file `config-raspberrypi.json` contains the user credentials you use to log in to Pi. To avoid the leak of user credentials, the configuration file is generated in the subfolder `.iot-hub-getting-started` of the home folder on your computer.
-
-2. Open the device configuration file in Visual Studio Code by running the following command:
-   
-   ```bash
-   # For Windows command prompt
-   code %USERPROFILE%\.iot-hub-getting-started\config-raspberrypi.json
-   
-   # For MacOS or Ubuntu
-   code ~/.iot-hub-getting-started/config-raspberrypi.json
-   ```
-
-3. Replace the placeholder `[device hostname or IP address]` with the IP address or the host name that you got previously in "Obtain the IP address and host name of Pi."
-   
-   ![Config.json](media/iot-hub-raspberry-pi-lessons/lesson1/vscode-config-mac.png)
-
-> [!NOTE]
-> You can use SSH key instead of user name and password when connecting to Raspberry Pi. 
-> In order to do this you will have to generate the key using **ssh-keygen** and **ssh-copy-id pi@\<device address\>**.
->
-> On Windows these commands are available in **Git Bash**.
->
-> On MacOS you need to run **brew install ssh-copy-id**.
->
-> After successfully uploading the key to the Raspberry Pi, replace **device_password** with **device_key_path** property in **config-raspberrypi.json**.
->
-> Updated lines should look as below:
-> ```javascript
-> "device_user_name": "pi",
-> "device_key_path": "id_rsa",
-> ```
-
-Congratulations! You've successfully created the first sample application for Pi.
-
-## Deploy and run the sample application
-### Install the Azure IoT Hub SDK on Pi
-Install the Azure IoT Hub SDK on Pi by running the following command:
-
-```bash
-gulp install-tools
-```
-
-This task might take a few minutes to complete the first time you run it.
-
-### Deploy and run the sample app
-Deploy and run the sample application by running the following command:
-
-```bash
-gulp deploy && gulp run
-```
+## Run the app
+* Set project to ARM and Remote Device (as per previous page)
+* Configure the target to your rPI (as per previous page).
+* Build and deploy the app.
+ 
 
 ### Verify the app works
 The sample application terminates automatically after the LED blinks for 20 times. If you don’t see the LED blinking, see the [troubleshooting guide](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-troubleshooting.md) for solutions to common problems.
