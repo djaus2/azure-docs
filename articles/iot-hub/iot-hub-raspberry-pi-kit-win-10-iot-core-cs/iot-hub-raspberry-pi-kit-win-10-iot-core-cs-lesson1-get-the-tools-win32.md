@@ -130,7 +130,7 @@ Since the IoT extension SDK is not added to projects by default, you'll need to 
 * Set the Build to ARM (RPI is an ARM CPU)
 * Set the Target to Remote Device. A dialog will pop up:
 
-![Debug Dialog](media/IoTDashboard/DebugDialog.png)
+![Debug Dialog](media/IoTDashboard/debugdialog.png)
 
 * Note the PI is detected, which you select as the target f not doen automatically.
 * The Authentication must be Universal(Unencrypted)Protocol
