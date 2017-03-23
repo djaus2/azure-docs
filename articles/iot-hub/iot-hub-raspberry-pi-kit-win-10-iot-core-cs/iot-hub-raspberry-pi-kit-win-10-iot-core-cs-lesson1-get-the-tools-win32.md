@@ -21,12 +21,12 @@ ms.author: xshi
 # Get the tools (Windows 7 or later)
 
 > [!div class="op_single_selector"]
-> * [Windows 7 or later](iot-hub-raspberry-pi-kit-c-lesson1-get-the-tools-win32.md)
-> * [Ubuntu 16.04](iot-hub-raspberry-pi-kit-c-lesson1-get-the-tools-ubuntu.md)
-> * [macOS 10.10](iot-hub-raspberry-pi-kit-c-lesson1-get-the-tools-mac.md)
+> * [Windows 7 or later](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson1-get-the-tools-win32.md)
+> * [Ubuntu 16.04](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson1-get-the-tools-ubuntu.md)
+> * [macOS 10.10](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson1-get-the-tools-mac.md)
 
 ## What you will do
-Download the development tools and the software for the first sample application for Raspberry Pi 3. If you have any problems, look for solutions on the [troubleshooting page](iot-hub-raspberry-pi-kit-c-troubleshooting.md).
+Download the development tools and the software for the first sample application for Raspberry Pi 3. If you have any problems, look for solutions on the [troubleshooting page](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-troubleshooting.md).
 
 > [!NOTE]
 > Although the programming language of the main logic is C, Node.js tools are used in the lessons to discover devices, and build and deploy sample applications.
@@ -65,7 +65,7 @@ Start a command prompt as an administrator. Install `gulp` and `device-discovery
 npm install -g device-discovery-cli gulp
 ```
 
-If you experience issues installing Node.js and these additional Node.js development tools on your computer, see the [troubleshooting guide](iot-hub-raspberry-pi-kit-c-troubleshooting.md) for solutions to common problems.
+If you experience issues installing Node.js and these additional Node.js development tools on your computer, see the [troubleshooting guide](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-troubleshooting.md) for solutions to common problems.
 
 ## Install Visual Studio Code
 
@@ -77,4 +77,4 @@ You've installed the required development tools and software for the first sampl
 
 ## Next steps
 
-[Create and deploy the blink application](iot-hub-raspberry-pi-kit-c-lesson1-deploy-blink-app.md)
+[Create and deploy the blink application](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson1-deploy-blink-app.md)

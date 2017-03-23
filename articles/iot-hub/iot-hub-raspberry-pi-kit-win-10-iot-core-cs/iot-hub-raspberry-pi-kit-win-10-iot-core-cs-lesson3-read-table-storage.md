@@ -20,13 +20,13 @@ ms.author: xshi
 ---
 # Read messages persisted in Azure Storage
 ## What you will do
-Monitor the device-to-cloud messages that are sent from Raspberry Pi 3 to your IoT hub as the messages are written to your Azure Table storage. If you have any problems, look for solutions on the [troubleshooting page](iot-hub-raspberry-pi-kit-c-troubleshooting.md).
+Monitor the device-to-cloud messages that are sent from Raspberry Pi 3 to your IoT hub as the messages are written to your Azure Table storage. If you have any problems, look for solutions on the [troubleshooting page](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-troubleshooting.md).
 
 ## What you will learn
 In this article, you will learn how to use the gulp read-message task to read messages persisted in your Azure Table storage.
 
 ## What you need
-Before starting this process, you must have successfully completed [Run the Azure blink sample application on Raspberry Pi 3](iot-hub-raspberry-pi-kit-c-lesson3-run-azure-blink.md).
+Before starting this process, you must have successfully completed [Run the Azure blink sample application on Raspberry Pi 3](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson3-run-azure-blink.md).
 
 ## Read new messages from your storage account
 In the previous article, you ran a sample application on Pi. The sample application sent messages to your Azure IoT hub. The messages sent to your IoT hub are stored into your Azure Table storage via the Azure function app. You need the Azure storage connection string to read messages from your Azure Table storage.
@@ -66,5 +66,5 @@ To read messages stored in your Azure Table storage, follow these steps:
 You've successfully connected Pi to your IoT hub in the cloud and used the blink sample application to send device-to-cloud messages. You also used the Azure function app to store incoming IoT hub messages to your Azure Table storage. You can now send cloud-to-device messages from your IoT hub to Pi.
 
 ## Next steps
-[Run a sample application to receive cloud-to-device messages](iot-hub-raspberry-pi-kit-c-lesson4-send-cloud-to-device-messages.md)
+[Run a sample application to receive cloud-to-device messages](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson4-send-cloud-to-device-messages.md)
 

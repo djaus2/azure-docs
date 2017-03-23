@@ -20,13 +20,13 @@ ms.author: xshi
 ---
 # Change the on and off behavior of the LED
 ## What you will do
-Customize the messages to change the LED’s on and off behavior. If you have any problems, look for solutions on the [troubleshooting page](iot-hub-raspberry-pi-kit-c-troubleshooting.md).
+Customize the messages to change the LED’s on and off behavior. If you have any problems, look for solutions on the [troubleshooting page](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-troubleshooting.md).
 
 ## What you will learn
 Use additional Node.js functions to change the LED’s on and off behavior.
 
 ## What you need
-You must have successfully completed [Run a sample application on Raspberry Pi to receive cloud to device messages](iot-hub-raspberry-pi-kit-c-lesson4-send-cloud-to-device-messages.md).
+You must have successfully completed [Run a sample application on Raspberry Pi to receive cloud to device messages](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson4-send-cloud-to-device-messages.md).
 
 ## Add functions to main.c and gulpfile.js
 1. Open the sample application in Visual Studio code by running the following commands:

@@ -20,7 +20,7 @@ ms.author: xshi
 ---
 # Create and deploy the blink application
 ## What you will do
-Clone the sample C application from GitHub, and use the gulp tool to deploy the sample application to Raspberry Pi 3. The sample application blinks the LED connected to the board every two seconds. If you have any problems, look for solutions on the [troubleshooting page](iot-hub-raspberry-pi-kit-c-troubleshooting.md).
+Clone the sample C application from GitHub, and use the gulp tool to deploy the sample application to Raspberry Pi 3. The sample application blinks the LED connected to the board every two seconds. If you have any problems, look for solutions on the [troubleshooting page](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-troubleshooting.md).
 
 ## What you will learn
 In this article, you will learn:
@@ -32,8 +32,8 @@ In this article, you will learn:
 ## What you need
 You must have successfully completed the following operations:
 
-* [Configure your device](iot-hub-raspberry-pi-kit-c-lesson1-configure-your-device.md)
-* [Get the tools](iot-hub-raspberry-pi-kit-c-lesson1-get-the-tools-win32.md)
+* [Configure your device](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson1-configure-your-device.md)
+* [Get the tools](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson1-get-the-tools-win32.md)
 
 ## Obtain the IP address and host name of Pi
 Open a command prompt in Windows or a terminal in macOS or Ubuntu, and then run the following command:
@@ -139,12 +139,12 @@ gulp deploy && gulp run
 ```
 
 ### Verify the app works
-The sample application terminates automatically after the LED blinks for 20 times. If you don’t see the LED blinking, see the [troubleshooting guide](iot-hub-raspberry-pi-kit-c-troubleshooting.md) for solutions to common problems.
+The sample application terminates automatically after the LED blinks for 20 times. If you don’t see the LED blinking, see the [troubleshooting guide](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-troubleshooting.md) for solutions to common problems.
 ![LED blinking](media/iot-hub-raspberry-pi-lessons/lesson1/led_blinking.jpg)
 
 ## Summary
 You've installed the required tools to work with Pi and deployed a sample application to Pi to blink the LED. You can now create, deploy, and run another sample application that connects Pi to Azure IoT Hub to send and receive messages.
 
 ## Next steps
-[Get Azure tools](iot-hub-raspberry-pi-kit-c-lesson2-get-azure-tools-win32.md)
+[Get Azure tools](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson2-get-azure-tools-win32.md)
 

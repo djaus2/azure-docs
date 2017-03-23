@@ -20,13 +20,13 @@ ms.author: xshi
 ---
 # Run a sample application to send device-to-cloud messages
 ## What you will do
-This article will show you how to deploy and run a sample application on Raspberry Pi 3 that sends messages to your IoT hub. If you have any problems, look for solutions on the [troubleshooting page](iot-hub-raspberry-pi-kit-c-troubleshooting.md).
+This article will show you how to deploy and run a sample application on Raspberry Pi 3 that sends messages to your IoT hub. If you have any problems, look for solutions on the [troubleshooting page](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-troubleshooting.md).
 
 ## What you will learn
 You will learn how to use the gulp tool to deploy and run the sample Node.js application on Pi.
 
 ## What you need
-* Before you start this task, you must have successfully completed [Create an Azure function app and a storage account to process and store IoT hub messages](iot-hub-raspberry-pi-kit-c-lesson3-deploy-resource-manager-template.md).
+* Before you start this task, you must have successfully completed [Create an Azure function app and a storage account to process and store IoT hub messages](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson3-deploy-resource-manager-template.md).
 
 ## Get your IoT hub and device connection strings
 The device connection string is used by your Pi to connect to your IoT hub. The IoT hub connection string is used to connect to the identity registry in your IoT hub to manage the devices that are allowed to connect to your IoT hub. 
@@ -104,5 +104,5 @@ You should see the LED that is connected to Pi blinking every two seconds. Every
 You've deployed and run the new blink sample application on Pi to send device-to-cloud messages to your IoT hub. You now monitor your messages as they are written to the storage account.
 
 ## Next steps
-[Read messages persisted in Azure Storage](iot-hub-raspberry-pi-kit-c-lesson3-read-table-storage.md)
+[Read messages persisted in Azure Storage](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson3-read-table-storage.md)
 

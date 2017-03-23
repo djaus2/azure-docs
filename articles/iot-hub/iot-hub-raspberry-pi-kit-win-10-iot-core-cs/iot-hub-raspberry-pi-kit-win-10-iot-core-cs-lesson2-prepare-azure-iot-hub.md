@@ -24,7 +24,7 @@ ms.author: xshi
 * Create your Azure IoT hub in the resource group.
 * Add Raspberry Pi 3 to the Azure IoT hub by using the Azure command-line interface (Azure CLI).
 
-When you use the Azure CLI to add Pi to your IoT hub, the service generates a key for Pi to authenticate with the service. If you have any problems, look for solutions on the [troubleshooting page](iot-hub-raspberry-pi-kit-c-troubleshooting.md).
+When you use the Azure CLI to add Pi to your IoT hub, the service generates a key for Pi to authenticate with the service. If you have any problems, look for solutions on the [troubleshooting page](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-troubleshooting.md).
 
 ## What you will learn
 In this article, you will learn:
@@ -91,5 +91,5 @@ az iot device create --device-id myraspberrypi --hub {my hub name} --resource-gr
 You've created an IoT hub and registered Pi with a device identity in your IoT hub. You're ready to learn how to send messages from Pi to your IoT hub.
 
 ## Next steps
-[Create an Azure function app and an Azure Storage account to process and store IoT hub messages](iot-hub-raspberry-pi-kit-c-lesson3-deploy-resource-manager-template.md).
+[Create an Azure function app and an Azure Storage account to process and store IoT hub messages](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson3-deploy-resource-manager-template.md).
 

@@ -20,12 +20,12 @@ ms.author: xshi
 ---
 # Get Azure tools (Windows 7 and later)
 > [!div class="op_single_selector"]
-> * [Windows 7 and later](iot-hub-raspberry-pi-kit-c-lesson2-get-azure-tools-win32.md)
-> * [Ubuntu 16.04](iot-hub-raspberry-pi-kit-c-lesson2-get-azure-tools-ubuntu.md)
-> * [macOS 10.10](iot-hub-raspberry-pi-kit-c-lesson2-get-azure-tools-mac.md)
+> * [Windows 7 and later](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson2-get-azure-tools-win32.md)
+> * [Ubuntu 16.04](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson2-get-azure-tools-ubuntu.md)
+> * [macOS 10.10](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson2-get-azure-tools-mac.md)
 
 ## What you will do
-Install Python and the Azure command-line interface (Azure CLI). If you have any problems, look for solutions on the [troubleshooting page](iot-hub-raspberry-pi-kit-c-troubleshooting.md).
+Install Python and the Azure command-line interface (Azure CLI). If you have any problems, look for solutions on the [troubleshooting page](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-troubleshooting.md).
 
 ## What you will learn
 In this article, you will learn:
@@ -67,5 +67,5 @@ You see the following output if the installation is successful.
 You've installed the Azure CLI. Your next task to create your Azure IoT hub and device identity by using the Azure CLI.
 
 ## Next steps
-[Create your IoT hub and register Raspberry Pi 3](iot-hub-raspberry-pi-kit-c-lesson2-prepare-azure-iot-hub.md)
+[Create your IoT hub and register Raspberry Pi 3](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson2-prepare-azure-iot-hub.md)
 
