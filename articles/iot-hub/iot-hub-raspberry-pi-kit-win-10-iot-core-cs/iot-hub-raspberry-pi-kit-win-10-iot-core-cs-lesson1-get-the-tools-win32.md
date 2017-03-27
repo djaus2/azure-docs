@@ -41,6 +41,11 @@ In this article, you will learn:
 
 ## What you need
 
+You must have successfully completed the following operations:
+
+* [Setup your device](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson1-setup-your-device.md)
+* [Boot your device](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson1-boot-your-device.md)
+
 To complete this operation, you will need:
 
 * An Internet connection to download the development tools and the software.
@@ -211,6 +216,8 @@ Since the IoT extension SDK is not added to projects by default, you'll need to 
 
 ## The Solution
 [See Project Solutions Repository)](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-Project-Solution-Repository.md)
+
+Set the Build symbol to LESSON_1_0
 
 ## Summary
 

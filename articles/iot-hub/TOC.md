@@ -54,8 +54,10 @@
 
 ### [CS](iot-hub-raspberry-pi-kit-win-10-iot-core-cs/iot-hub-raspberry-pi-kit-win-10-iot-core-cs-get-started.md)
 #### Lesson 1: Configure your device
-##### [Configure your device](iot-hub-raspberry-pi-kit-win-10-iot-core-cs/iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson1-configure-your-device.md)
+##### [Setup your device](iot-hub-raspberry-pi-kit-win-10-iot-core-cs/iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson1-setup-your-device.md)
+##### [Boot your device](iot-hub-raspberry-pi-kit-win-10-iot-core-cs/iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson1-boot-your-device.md)
 ##### [Get the tools (Windows 7+)](iot-hub-raspberry-pi-kit-win-10-iot-core-cs/iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson1-get-the-tools-win32.md)
+##### [Setup LED Hardware](iot-hub-raspberry-pi-kit-win-10-iot-core-cs/iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson1-setup-led-hw-on-your-device.md)
 ##### [Create and deploy the blink application](iot-hub-raspberry-pi-kit-win-10-iot-core-cs/iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson1-deploy-blink-app.md)
 #### Lesson 2: Create your IoT hub
 ##### [Get the Azure tools (Windows 7+)](iot-hub-raspberry-pi-kit-win-10-iot-core-cs/iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson2-get-azure-tools-win32.md)
