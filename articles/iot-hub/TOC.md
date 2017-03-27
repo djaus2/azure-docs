@@ -52,7 +52,8 @@
 ##### [Optional: Change the LED behavior](iot-hub-raspberry-pi-kit-c-lesson4-change-led-behavior.md)
 #### [Troubleshoot](iot-hub-raspberry-pi-kit-c-troubleshooting.md)
 
-### [Connect your Raspberry Pi 3 device to your IoT hub using C#](iot-hub-raspberry-pi-kit-win-10-iot-core-cs/iot-hub-raspberry-pi-kit-win-10-iot-core-cs-get-started.md)
+
+### [C#]  [Connect your Raspberry Pi 3 device to your IoT hub using C#](iot-hub-raspberry-pi-kit-win-10-iot-core-cs/iot-hub-raspberry-pi-kit-win-10-iot-core-cs-get-started.md)
 #### Lesson 1: Configure your device
 ##### [Setup your device](iot-hub-raspberry-pi-kit-win-10-iot-core-cs/iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson1-setup-your-device.md)
 ##### [Boot your device](iot-hub-raspberry-pi-kit-win-10-iot-core-cs/iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson1-boot-your-device.md)
