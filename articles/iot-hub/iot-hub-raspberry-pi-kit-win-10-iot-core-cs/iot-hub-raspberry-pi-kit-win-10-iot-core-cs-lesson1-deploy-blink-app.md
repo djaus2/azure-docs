@@ -94,17 +94,15 @@ The MainPage.xaml.cs code thus simplifies to:
             {
 
                 var t = Task.Run(() => Loop());
-                t.Wait();
             }
 
-            Application.Current.Exit();
         }
 
         public async Task Loop()
         {
             for (int i = 0; i <  numLoops; i++)
             {
-
+                //Simulation code from previous lesson
                 IoTGPIO.LEDOn();
 
                 //Periodic Flash LED only
@@ -112,10 +110,13 @@ The MainPage.xaml.cs code thus simplifies to:
                 //Pause 400 mS for all
                 await System.Threading.Tasks.Task.Delay(TimeSpan.FromMilliseconds(400));
 
+                //Simulation code from prvious lesson
                 IoTGPIO.LEDOff();
 
                 //Pause 600 mS for all
                 await System.Threading.Tasks.Task.Delay(TimeSpan.FromMilliseconds(600));
+            }          
+            Application.Current.Exit();
         }
 ```
 So The LED gets turned off and on periodically. The app does not use an UX apart from its Splash screen. We could usea simulated blink (ToDo).

@@ -35,7 +35,7 @@ In this article, you will learn:
 
   * [Visual Studio 2015/Update 3]()  You need least Update 3
     * ??:  [Visual Studio 2017](https://www.visualstudio.com/downloads/) is a JavaScript runtime with a rich package ecosystem.
-    
+
 * Create and run a simple LED simulation UWP app on the RPI
   
 
@@ -182,12 +182,12 @@ Finally add the following declarations at the top of the MainPage class in MainP
 * By default the app should be configured to run as an x86 app, in Debug mode on your local machine
 * Press F5 or Debug-Run
 * Close the app after testing the button functionality.
-* Put a Breakpoint on the this.HellloMessage (click on the LOC, press F9 ) line, run the app again and see th athe app braeks at that LOC.
-* F5 again to complete then exit the app
+* Put a Breakpoint in Loop() at the first await line of code(click on the LOC, press F9 ) line, run the app again and see that the app breaks at that LOC.
+* F5 again to continue. After  a few loops press F9 at teh breakpoint to remove it, then F5 to continue runningto completeion.
 
 ### 4. Add a reference to the Windows IoT extension SDK
 
-Since the IoT extension SDK is not added to projects by default, you'll need to add a reference so that namespaces like **Windows.Devices.Gpio** will be available in the project. To do so, just right-click on the **References** entry under the project, Select **“Add Reference”** then navigate the resulting dialog to **Universal Windows->Extensions->Windows IoT Extensions for the UWP**, check the box, and click OK.
+Since the IoT extension SDK is not added to projects by default, you'll need to add a reference so that namespaces like **Windows.Devices.Gpio** will be available in the project, as used to access the real LED later in this lesson. To do so, just right-click on the **References** entry under the project, Select **“Add Reference”** then navigate the resulting dialog to **Universal Windows->Extensions->Windows IoT Extensions for the UWP**, check the box, and click OK.
 
 ![IoT-Core Reference](media/IoTDashboard/Add_IoT_Extension_Reference75.png)
 
