@@ -207,7 +207,10 @@ Since the IoT extension SDK is not added to projects by default, you'll need to 
 ### 6. Run the app on your RPI
 * F5 again.  Test Breakpoints.
 
+---
 
+## The Solution
+[See Project Solutions Repository)](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-Project-Solution-Repository.md)
 
 ## Summary
 
