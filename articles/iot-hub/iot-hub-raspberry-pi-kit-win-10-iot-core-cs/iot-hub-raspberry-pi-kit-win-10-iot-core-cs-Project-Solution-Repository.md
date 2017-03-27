@@ -18,7 +18,7 @@ ms.date: 11/28/2016
 ms.author: xshi
 
 ---
-# THe Solutions
+# The Solutions
 
 ## What you will do
 Clone the sample C# application Visual Studio solutions project from GitHub.
