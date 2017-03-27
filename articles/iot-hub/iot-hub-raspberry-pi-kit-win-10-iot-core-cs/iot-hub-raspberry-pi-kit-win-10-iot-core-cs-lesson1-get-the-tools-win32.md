@@ -24,7 +24,7 @@ ms.author: djaus
 > * [Windows 7 or later](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson1-get-the-tools-win32.md)
 
 ## What you will do
-Download the development tools and the software for the first sample application for Raspberry Pi 3. If you have any problems, look for solutions on the [troubleshooting page](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-troubleshooting.md).
+Download the development tools and software for the first sample application for Raspberry Pi 3. If you have any problems, look for solutions on the [troubleshooting page](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-troubleshooting.md).
 
 
 ## What you will learn
@@ -35,7 +35,8 @@ In this article, you will learn:
 
   * [Visual Studio 2015/Update 3]()  You need least Update 3
     * ??:  [Visual Studio 2017](https://www.visualstudio.com/downloads/) is a JavaScript runtime with a rich package ecosystem.
-* Create and run a Hello World UWP app on the RPI
+    
+* Create and run a simple LED simulation UWP app on the RPI
   
 
 ## What you need
@@ -93,24 +94,88 @@ All of the sample code is available to download, but as an exercise, this tutori
 
 ### 2. Create a UX using XAML
 
-From Solution Explorer, select the MainPage.xaml file. We want to add a TextBox and a Button, to show some interaction. So we will edit the XAML file to add these elements. Locate the *Grid* tag in the XAML section of the designer, and add the following markup. Note you need to show the xaml code, click on its tab.
+From Solution Explorer, select the MainPage.xaml file. We want toa add a background image and an ellipse as a simulated LED. To LED (ellipse) will periodically change from Red to Gray, ie "flash". 
+
+So edit the XAML file to add these elements: Locate the *Grid* tag in the XAML section of the designer, and embellish it as follows. Note you need to show the xaml code, click on its tab.
 
 ```c#
-<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-    <TextBox x:Name="HelloMessage" Text="Hello, World!" Margin="10" IsReadOnly="True"/>
-    <Button x:Name="ClickMe" Content="Click Me!"  Margin="10" HorizontalAlignment="Center"/>
-    </StackPanel>
-</Grid>
+  <Grid RenderTransformOrigin="0.257,0.127" >
+      <Grid.Background>
+          <ImageBrush ImageSource ="hardware_ready.png" Stretch="None"></ImageBrush>
+      </Grid.Background>
+
+      <Ellipse x:Name="LED" Fill="LightGray" Stroke="White" Width="60" Height="70" Margin="78,10,222,560" RenderTransformOrigin="-0.22,-1.273"/>
+
+  </Grid>
 ```
 
-Add a button handler in MainPage.xaml.cs:
+
+We want to initiate a simulated flashing lED when the XAML form is loaded. Modify the last line of the  **Page** tag above the grid one from
 
 ```c#
-private void ClickMe_Click(object sender, RoutedEventArgs e)
-{
-    this.HelloMessage.Text = "Hello, Windows 10 IoT Core!";
-}
+    mc:Ignorable="d" >
+```  
+to be
+```c#
+    mc:Ignorable="d" Loaded="Page_Loaded">
+```   
+
+The background image *(as specified in the grid xaml code)* is a file that looks like the harwdare we will use later, as below. Right-click on it and save it in the root of your project.
+
+![hardware_ready.png](media/IoTDashboard/hardware_ready.png)
+
+*hardware_ready.png*   
+
+Add a handler for Page_Loaded() in MainPage.xaml.cs:
+
+```c#
+      private void Page_Loaded(object sender, RoutedEventArgs e)
+      {
+          var t = Task.Run(() => Loop());
+      }
+``` 
+
+This will cause the Loop() method to run once the page is loaded. You can't interact with UX elements until the page is loaded.
+
+Implement the Loop() method, also in MainPage.xaml.cs
+
+```c#
+      int numLoops = 20;
+      public async Task Loop()
+      {
+          for (int i = 0; i < numLoops; i++)
+          {
+              await this.Dispatcher.RunAsync(CoreDispatcherPriority.Normal,
+              () =>
+              {
+                  LED.Fill = redBrush;
+              });
+
+              //Periodic flash simulated LED
+
+              //Pause 400 mS
+              await System.Threading.Tasks.Task.Delay(TimeSpan.FromMilliseconds(400));
+
+              await this.Dispatcher.RunAsync(CoreDispatcherPriority.Normal,
+              () =>
+              {
+                  LED.Fill = grayBrush;
+              });
+
+              //Pause 600 mS
+              await System.Threading.Tasks.Task.Delay(TimeSpan.FromMilliseconds(600));
+
+          }
+
+          Application.Current.Exit();
+      }
+``` 
+
+Finally add the following declarations at the top of the MainPage class in MainPage.xaml.cs 
+
+```c#
+      private SolidColorBrush redBrush = new SolidColorBrush(Windows.UI.Colors.Red);
+      private SolidColorBrush grayBrush = new SolidColorBrush(Windows.UI.Colors.LightGray);
 ```
 
 ### 3. Run the app on your development machine

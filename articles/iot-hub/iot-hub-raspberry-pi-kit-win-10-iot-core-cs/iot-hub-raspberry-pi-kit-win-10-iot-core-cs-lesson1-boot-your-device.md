@@ -30,7 +30,7 @@ In this article, you will learn:
 * Exploring the booted device with IoT Dashboard, Device Manager and Remote.
 
 ## Initial setup
-As per [Configure your device](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson1-configure-your-device.md)
+As per [Setup your device](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson1-setup-your-device.md)
 
 ## Peripherals
 * Connect an HDMI monitor via the RPI HDMI connector using an HDMI cable.

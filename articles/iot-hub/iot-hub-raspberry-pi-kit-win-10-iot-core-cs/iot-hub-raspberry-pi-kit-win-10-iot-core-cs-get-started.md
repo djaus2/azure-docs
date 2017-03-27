@@ -31,12 +31,12 @@ In this tutorial, you begin by learning the basics of working with Raspberry Pi 
 
 In this lesson, you configure your Raspberry Pi 3 device with an operating system, set up the development environment, and deploy an application to Pi.
 
-### Configure your device
+### Setup your device
 Configure Raspberry Pi 3 for first-time use and install Windows 10 IoT-Core.... The operating system built for the Internet of Things. Its free to download'
 
 *Estimated time to complete: 30 minutes*
 
-Go to [Configure your device](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson1-configure-your-device.md).
+Go to [Setup your device](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson1-setup-your-device.md).
 
 ### Boot your device
 Boot Raspberry Pi 3 for first-time use and explore it.
@@ -51,6 +51,13 @@ Download the tools and software to build and deploy your first application for R
 *Estimated time to complete: 20 minutes*
 
 Go to [Get the tools](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson1-get-the-tools-win32.md).
+
+### Setup LED Hardware
+Download the tools and software to build and deploy your first application for Raspberry Pi 3.
+
+*Estimated time to complete: 20 minutes*
+
+Go to [Setup LED Hardware](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson1-setup-led-hw-on-your-device.md).
 
 ### Create and deploy the blink application
 Clone the sample C blink application from GitHub, and use gulp to deploy this application to your Raspberry Pi 3 board. This sample application blinks the LED connected to the board every two seconds.
