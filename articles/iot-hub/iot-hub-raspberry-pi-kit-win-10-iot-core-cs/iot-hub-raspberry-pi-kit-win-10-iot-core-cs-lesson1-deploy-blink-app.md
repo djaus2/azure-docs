@@ -141,6 +141,7 @@ The sample application terminates automatically after the LED blinks for 20 time
 ![LED blinking](media/iot-hub-raspberry-pi-lessons/lesson1/led_blinking.jpg)
 
 ---
+
 ## The solution
 See [Project Solutions Repository)](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-Project-Solution-Repository.md)
 
@@ -150,5 +151,8 @@ Set the lesson symbol to **LESSON_1_1**
 You've installed the required tools to work with Pi and deployed a sample application to Pi to blink the LED. You can now create, deploy, and run another sample application that connects Pi to Azure IoT Hub to send and receive messages.
 
 ## Next steps
-[Get Azure tools](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson2-get-azure-tools-win32.md)
+
+* Get Azure Tools
+
+[Back to Index](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-get-started.md)
 
