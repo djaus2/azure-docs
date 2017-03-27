@@ -219,4 +219,5 @@ You've installed the required development tools and software for the first sampl
 
 ## Next steps
 
-[Create and deploy the blink application](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson1-deploy-blink-app.md)
+[Setup LED Hardware](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson1-setup-led-hw-on-your-device.md)
+
