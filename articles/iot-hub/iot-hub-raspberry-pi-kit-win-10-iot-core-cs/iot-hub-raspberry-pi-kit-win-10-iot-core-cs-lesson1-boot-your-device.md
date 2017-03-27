@@ -4,7 +4,7 @@ description: Boot Raspberry Pi 3 for first-time use and explore it.
 services: iot-hub
 documentationcenter: ''
 author: djaus
-manager: timtl
+manager: na
 tags: ''
 keywords: 'install Windows 10 IoT-Core, Windows 10 IoT-Core download, how to install Windows 10 IoT-Core, Windows 10 IoT-Core setup, raspberry pi install Windows 10 IoT-Core, raspberry pi install os, raspberry pi sd card install, raspberry pi connect, connect to raspberry pi, raspberry pi connectivity'
 
@@ -14,8 +14,8 @@ ms.devlang: C#
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/28/2016
-ms.author: djaus done
+ms.date: 03/28/2016
+ms.author: djaus
 
 ---
 # Boot your device

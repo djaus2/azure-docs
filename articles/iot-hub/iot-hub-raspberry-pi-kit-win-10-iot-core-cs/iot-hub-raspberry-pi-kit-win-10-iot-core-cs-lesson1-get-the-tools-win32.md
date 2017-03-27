@@ -4,7 +4,7 @@ description: Download and install the necessary tools and software for the first
 services: iot-hub
 documentationcenter: ''
 author: djaus
-manager: done
+manager: na
 tags: ''
 keywords: 'iot development, iot software, internet of things software, install git on windows, install node js windows, install npm on windows'
 
@@ -12,9 +12,9 @@ ms.assetid: bd765ddd-65b7-4241-a391-dc77cb3af1c0
 ms.service: iot-hub
 ms.devlang: C#
 ms.topic: article
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: rpi
 ms.workload: na
-ms.date: 04/24/2017
+ms.date: 03/28/2016
 ms.author: djaus
 
 ---
@@ -24,7 +24,7 @@ ms.author: djaus
 > * [Windows 7 or later](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson1-get-the-tools-win32.md)
 
 ## What you will do
-Download the development tools and software for the first sample application for Raspberry Pi 3. If you have any problems, look for solutions on the [troubleshooting page](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-troubleshooting.md).
+Download the development tools and software for the first sample application for Raspberry Pi 3. If you have any problems, look for solutions. See  [Project Solutions Repository)](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-Project-Solution-Repository.md).
 
 
 ## What you will learn

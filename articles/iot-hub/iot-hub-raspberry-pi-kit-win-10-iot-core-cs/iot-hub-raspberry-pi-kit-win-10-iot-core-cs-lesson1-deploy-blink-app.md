@@ -3,19 +3,19 @@ title: 'Connect Raspberry Pi (C) to Azure IoT - Lesson 1: Deploy app | Microsoft
 description: Clone the sample C application from GitHub, and gulp to deploy this application to your Raspberry Pi 3 board. This sample application blinks the LED connected to the board every two seconds.
 services: iot-hub
 documentationcenter: ''
-author: shizn
-manager: timtl
+author: djaus
+manager: na
 tags: ''
 keywords: 'raspberry pi led blink, blink led with raspberry pi'
 
 ms.assetid: f601d1e1-2bc3-4cc5-a6b1-0467e5304dcf
 ms.service: iot-hub
-ms.devlang: c
+ms.devlang: C#
 ms.topic: article
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: RPI
 ms.workload: na
-ms.date: 11/28/2016
-ms.author: xshi
+ms.date: 03/28/2016
+ms.author: djaus
 
 ---
 # Create and deploy the blink application

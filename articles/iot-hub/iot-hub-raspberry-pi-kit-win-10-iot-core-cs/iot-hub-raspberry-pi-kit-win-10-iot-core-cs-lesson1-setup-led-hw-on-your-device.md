@@ -12,10 +12,10 @@ ms.assetid: 8ee9b23c-93f7-43ff-8ea1-e7761eb87a6f
 ms.service: iot-hub
 ms.devlang: C#
 ms.topic: article
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: rpi
 ms.workload: na
-ms.date: 11/28/2016
-ms.author: djaus done
+ms.date: 03/28/2016
+ms.author: djaus
 
 ---
 # Configure your device
