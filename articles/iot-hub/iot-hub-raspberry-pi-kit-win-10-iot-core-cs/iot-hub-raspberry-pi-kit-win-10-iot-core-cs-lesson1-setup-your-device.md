@@ -61,7 +61,7 @@ The IoT Dashboard makes it easy to set up a new device. For detailed instruction
 
 ![IoT Dashboard Setup Page](media/IoTDashboard/IoTDashboard_SetupPage.png)
 
-You set up the SD card for installation by selecting items from the first three dropdown menus and entering the other required information. If you wish to use a downloaded image, select **Other** from the **Device Type**. You will be directed to browse to the .ffu file location, typically in **C:\Program Files (x86)\Microsoft IoT\FFU**
+You set up the SD card for installation by selecting items from the first three dropdown menus and entering the other required information. If you wish to use a downloaded image, select **Custom** from the **Device Type**. You will be directed to browse to the .ffu file location, typically in **C:\Program Files (x86)\Microsoft IoT\FFU**
 
 
 #### SD card

@@ -80,19 +80,12 @@ In this lesson, you create your free Azure account, provision your Azure IoT hub
 
 Complete Lesson 1 before you start this lesson.
 
-### Get the Azure tools
-Install the Azure command-line interface (Azure CLI).
+### Create an Azure IoT Hub and Provision a RPI device on it
+Create an account on Azure, create an IoT Hub, enable TPM on your PI and provision it as an IoT Hub Device.
 
-*Estimated time to complete: 10 minutes*
+*Estimated time to complete: 15 minutes*
 
-Go to [Get Azure tools](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson2-get-azure-tools-win32.md).
-
-### Create your IoT hub and register Raspberry Pi 3
-Create your resource group, provision your first Azure IoT hub, and add your first device to the IoT hub using Azure CLI.
-
-*Estimated time to complete: 10 minutes*
-
-Go to [Create your IoT hub and register Raspberry Pi 3](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson2-prepare-azure-iot-hub.md).
+Go to [Setup IoT Hub and Provision a RPI](iot-hub-raspberry-pi-kit-win-10-iot-core-cs-lesson2-Provision-a-RPI-on-IoT-Hub-using-IoTDashboard.md).
 
 ## Lesson 3: Send device-to-cloud messages
 ![Lesson 3 end-to-end diagram](media/iot-hub-raspberry-pi-lessons/e2e-lesson3.png)
