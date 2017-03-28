@@ -61,7 +61,7 @@ In this article, you will learn:
 * If TPM is already setup on your device, a check will be done. If all is OK, it checks a few thinsgs, action the provisioning.
 * Probably at thhis stage though  it will prompt you with respect to TPM (see red box):
 
-![IoTDashboard TPM](media/IoTDashboard/TPM.png)
+![IoTDashboard TPM](media/IoTDashboard/tpm.png)
 
 * Select Software TPM (No Security). TPM is implemented in hardware, that the RPI doesn't have, so w emulate it.
     * See [Is IoT Security an Oxymoron](http://embedded101.com/Blogs/David-Jones/entryid/780/is-iot-security-an-oxymoron)
@@ -72,7 +72,7 @@ In this article, you will learn:
 * Click on TPM Configuration.
 
 
-![Device Portal TPM](media/IoTDashboard/TPM-device-portal.png)
+![Device Portal TPM](media/IoTDashboard/tpm-device-portal.png)
 
 
 ## Summary
